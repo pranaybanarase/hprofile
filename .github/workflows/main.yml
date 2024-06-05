@@ -27,8 +27,8 @@ jobs:
       - name: SonarQube Scan
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        #run: sonar-scanner -X
-        run: |
+        run: sonar-scanner -X
+        #run: |
           sonar-scanner \
            #-Dsonar.host.url=${{ secrets.SONAR_URL }}
            #-Dsonar.login=${{ secrets.SONAR_TOKEN }}
