@@ -29,7 +29,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: sonar-scanner -X
         #run: |
-          sonar-scanner \
+          #sonar-scanner \
            #-Dsonar.host.url=${{ secrets.SONAR_URL }}
            #-Dsonar.login=${{ secrets.SONAR_TOKEN }}
            #-Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
